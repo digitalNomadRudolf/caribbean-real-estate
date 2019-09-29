@@ -253,6 +253,7 @@
 
       &.row {
         /* margin-bottom: 2em; */
+        padding-bottom: 5em;
       }
 
       article.property {
@@ -363,8 +364,8 @@
     padding: 1em;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    position: absolute;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
     width: 100%;
 
      p.footer {
