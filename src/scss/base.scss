@@ -13,3 +13,8 @@ body {
   .text-small {
     font-size: small;
   }
+
+#root {
+  position: relative;
+  min-height: 100vh;
+}
