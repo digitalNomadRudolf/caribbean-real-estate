@@ -1,0 +1,106 @@
+/* Navbar */
+.navbar {
+    background: rgba(250,250,250,.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 2rem;
+    /* background: var(--offWhite); */
+    z-index: 1;
+  }
+  .nav-header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5.5em;
+
+    a {
+        margin-right: auto;
+        text-decoration: none;
+        color: currentColor;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+        font-size: 1.4em;
+    }
+  }
+  .nav-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  .nav-icon {
+    font-size: 1.5rem;
+    color: var(--primaryColor);
+  }
+  .nav-links {
+    height: 0;
+    overflow: hidden;
+    transition: var(--mainTransition);
+    list-style-type: none;
+    margin-right: 5.5em;
+    padding-top: .5em;
+  }
+  .nav-links a {
+    display: block;
+    text-decoration: none;
+    padding: 1rem 0;
+    color: var(--mainBlack);
+    transition: var(--mainTransition);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: var(--mainSpacing);
+  }
+  .nav-links a:hover {
+    color: var(--primaryColor);
+  }
+  
+  .show-nav {
+    height: 100px;
+  }
+  @media screen and (min-width: 793px) {
+    .nav-btn {
+      display: none;
+    }
+    .nav-center {
+      max-width: 1170px;
+      /* margin: 0 auto; */
+      display: flex;
+    }
+    .nav-links {
+      display: none;
+      height: auto;
+      display: flex;
+      margin-left: 4rem;
+      margin-right: 5.5em;
+
+      @media screen and (max-width: 812px) {
+        margin-left: 0;
+      }
+    }
+    .nav-links a {
+      margin: 0 1rem;
+      padding: 0.5rem 0;
+    }
+  }
+
+  @media screen and (max-width: 793px) {
+    .nav-header {
+        margin-left: 0;
+    }
+
+    .nav-links {
+        margin-left: unset;
+        margin-right: unset;
+        width: 100%;
+        padding: 0;
+        transition: all .2s;
+      }
+    button.nav-btn {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+  }
+  
